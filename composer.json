@@ -1,7 +1,8 @@
 {
     "name": "nazariy/git-reader",
-    "description": "Library containing helpers to provide information about GIT repository like commits, branches and contributors",
+    "description": "Library containing helpers to access GIT logs",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Nazariy Slyusarchuk",
