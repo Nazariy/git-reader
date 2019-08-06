@@ -14,61 +14,103 @@ List Branches
 $branches = $reporitory->getBranches();
 
 /** Results
-array (size=3)
-  0 => 
-    array (size=4)
-      'hash' => string '49e0902be200062cd89abefd730fd945ff1082be' (length=40)
-      'type' => string 'heads' (length=5)
-      'path' => string 'refs/heads/master' (length=17)
-      'name' => string 'master' (length=6)
-  1 => 
-    array (size=4)
-      'hash' => string '49e0902be200062cd89abefd730fd945ff1082be' (length=40)
-      'type' => string 'remotes' (length=7)
-      'path' => string 'refs/remotes/origin/HEAD' (length=24)
-      'name' => string 'origin/HEAD' (length=11)
-  2 => 
-    array (size=4)
-      'hash' => string '49e0902be200062cd89abefd730fd945ff1082be' (length=40)
-      'type' => string 'remotes' (length=7)
-      'path' => string 'refs/remotes/origin/master' (length=26)
-      'name' => string 'origin/master' (length=13)
+Array
+(
+    [0] => Array
+        (
+            [hash] => 584ce306cbc017f1d0a0b4d75a9c7cd005780d8c
+            [type] => heads
+            [path] => refs/heads/master
+            [name] => master
+        )
+
+    [1] => Array
+        (
+            [hash] => 584ce306cbc017f1d0a0b4d75a9c7cd005780d8c
+            [type] => remotes
+            [path] => refs/remotes/origin/HEAD
+            [name] => origin/HEAD
+        )
+
+    [2] => Array
+        (
+            [hash] => 584ce306cbc017f1d0a0b4d75a9c7cd005780d8c
+            [type] => remotes
+            [path] => refs/remotes/origin/master
+            [name] => origin/master
+        )
+
+)
 */
 ```
+
 Show Contributors
 ```php
 $contributors = $repository->getContributors();
 
 /** Results
-array (size=1)
-  0 => 
-    array (size=3)
-      'name' => string 'Nazariy Slyusarchuk' (length=19)
-      'email' => string 'Nazariy@users.noreply.github.com' (length=32)
-      'commits' => int 1
-*/
+Array
+(
+    [0] => Array
+        (
+            [name] => Nazariy Slyusarchuk
+            [email] => Nazariy@users.noreply.github.com
+            [commits] => 4
+        )
+
+)
 ```
+
 Show Stats
 ```php
 $stats = $instance->getShortStatGraph();
 
 /**
-array (size=1)
-  0 => 
-    array (size=8)
-      'author' => string 'Nazariy Slyusarchuk <Nazariy@users.noreply.github.com>' (length=54)
-      'author_email' => string 'Nazariy@users.noreply.github.com' (length=32)
-      'author_name' => string 'Slyusarchuk' (length=11)
-      'changes' => 
-        array (size=1)
-          0 => string 'Initial commit' (length=14)
-      'comment' => string 'Initial commit' (length=14)
-      'date' => 
-        object(DateTime)[6]
-          public 'date' => string '2019-08-06 17:37:33.000000' (length=26)
-          public 'timezone_type' => int 1
-          public 'timezone' => string '+03:00' (length=6)
-      'hash' => string 'f8759da2d82889b22278723148525dde3087e6db' (length=40)
-      'stats' => string '2 files changed, 23 insertions(+)' (length=33)
+Array
+(
+    [0] => Array
+        (
+            [author] => Nazariy Slyusarchuk <Nazariy@users.noreply.github.com>
+            [author_email] => Nazariy@users.noreply.github.com
+            [author_name] => Slyusarchuk
+            [changes] => Array
+                (
+                    [0] => Update README.md
+                )
+
+            [comment] => Update README.md
+            [date] => DateTime Object
+                (
+                    [date] => 2019-08-06 18:09:49.000000
+                    [timezone_type] => 1
+                    [timezone] => +03:00
+                )
+
+            [hash] => 584ce306cbc017f1d0a0b4d75a9c7cd005780d8c
+            [stats] => 1 file changed, 3 insertions(+), 2 deletions(-)
+        )
+
+    [1] => Array
+        (
+            [author] => Nazariy Slyusarchuk <Nazariy@users.noreply.github.com>
+            [author_email] => Nazariy@users.noreply.github.com
+            [author_name] => Slyusarchuk
+            [changes] => Array
+                (
+                    [0] => Update README.md
+                )
+
+            [comment] => Update README.md
+            [date] => DateTime Object
+                (
+                    [date] => 2019-08-06 18:08:21.000000
+                    [timezone_type] => 1
+                    [timezone] => +03:00
+                )
+
+            [hash] => 8b9d42871cdaa34efc613bc9f62613870f0996a6
+            [stats] => 1 file changed, 2 insertions(+), 1 deletion(-)
+        )
+)
 */
 ```
