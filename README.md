@@ -9,6 +9,7 @@ use GitReader\Repository;
 $repository = new Repository('/path/to/repository');
 ```
 
+List Branches
 ```php 
 $branches = $reporitory->getBranches();
 
@@ -34,7 +35,7 @@ array (size=3)
       'name' => string 'origin/master' (length=13)
 */
 ```
-
+Show Contributors
 ```php
 $contributors = $repository->getContributors();
 
@@ -47,7 +48,7 @@ array (size=1)
       'commits' => int 1
 */
 ```
-
+Show Stats
 ```php
 $stats = $instance->getShortStatGraph();
 
