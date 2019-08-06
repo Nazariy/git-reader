@@ -4,13 +4,13 @@ Library to containing helpers to provide information about GIT repository like c
 ##Usage
 
 ```php
+<?php
+
 use GitReader\Repository;
 
 $repository = new Repository('/path/to/repository');
-```
 
-List Branches
-```php 
+// List Branches
 $branches = $reporitory->getBranches();
 
 /** Results
@@ -42,10 +42,8 @@ Array
 
 )
 */
-```
 
-Show Contributors
-```php
+// Show Contributors
 $contributors = $repository->getContributors();
 
 /** Results
@@ -59,10 +57,8 @@ Array
         )
 
 )
-```
 
-Show Stats
-```php
+// Show Stats
 $stats = $instance->getShortStatGraph();
 
 /**
