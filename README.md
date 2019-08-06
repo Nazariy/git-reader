@@ -57,6 +57,7 @@ Array
         )
 
 )
+*/
 
 // Show Stats
 $stats = $instance->getShortStatGraph();
