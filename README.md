@@ -50,6 +50,7 @@ array (size=1)
 
 ```php
 $stats = $instance->getShortStatGraph();
+
 /**
 array (size=1)
   0 => 
