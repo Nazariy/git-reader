@@ -1,6 +1,6 @@
 {
     "name": "nazariy/git-reader",
-    "description": "Library to containing helpers to provide information about GIT repository like commits, branches and contributors",
+    "description": "Library containing helpers to provide information about GIT repository like commits, branches and contributors",
     "license": "MIT",
     "authors": [
         {
