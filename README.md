@@ -60,7 +60,7 @@ Array
 */
 
 // Show Stats
-$stats = $instance->getShortStatGraph();
+$stats = $reporitory->getShortStatGraph();
 
 /**
 Array
